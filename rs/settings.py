@@ -35,6 +35,7 @@ ALLOWED_HOSTS = config("ALLOWED_HOSTS", default=[], cast=Csv())
 
 RS_APPS = [
     "rs.core.apps.CoreConfig",
+    "rs.listings.apps.ListingsConfig",
 ]
 
 INSTALLED_APPS = [
