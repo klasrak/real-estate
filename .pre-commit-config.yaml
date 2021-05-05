@@ -4,14 +4,14 @@ repos:
       hooks:
           - id: isort
     - repo: https://github.com/PyCQA/flake8
-      rev: 3.9.0
+      rev: 3.9.1
       hooks:
           - id: flake8
     - repo: https://github.com/pre-commit/mirrors-eslint
-      rev: v7.23.0
+      rev: v7.25.0
       hooks:
           - id: eslint
     - repo: https://github.com/ambv/black
-      rev: stable
+      rev: 21.5b0
       hooks:
           - id: black
