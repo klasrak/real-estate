@@ -33,6 +33,10 @@ ALLOWED_HOSTS = config("ALLOWED_HOSTS", default=[], cast=Csv())
 
 # Application definition
 
+RS_APPS = [
+    "rs.core.apps.CoreConfig",
+]
+
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -41,7 +45,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "whitenoise.runserver_nostatic",  # Use whitenoise on local development
     "django.contrib.staticfiles",
-]
+] + RS_APPS
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
