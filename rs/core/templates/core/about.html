@@ -46,20 +46,24 @@
         </p>
       </div>
       <div class="col-md-4">
+        {% if mvp %}
+        {% for realtor in mvp %}
         <div class="card">
           <img
             class="card-img-top"
-            src="{{ mvp.photo.url }}"
+            src="{{ realtor.photo.url }}"
             alt="Seller of the month"
           />
           <div class="card-body">
             <h5 class="card-title">Seller Of The Month</h5>
-            <h6 class="text-secondary">{{ mvp.name }}</h6>
+            <h6 class="text-secondary">{{ realtor.name }}</h6>
             <p class="card-text">
-              {{ mvp.description }}
+              {{ realtor.description }}
             </p>
           </div>
         </div>
+        {% endfor %}
+        {% endif %}
       </div>
     </div>
   </div>
