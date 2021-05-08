@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "whitenoise.runserver_nostatic",  # Use whitenoise on local development
     "django.contrib.staticfiles",
+    "django.contrib.humanize",
 ] + RS_APPS
 
 
