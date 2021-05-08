@@ -40,4 +40,4 @@ class Listing(models.Model):
         return self.title
 
     class Meta:
-        ordering = ["list_date"]
+        ordering = ["-list_date"]
