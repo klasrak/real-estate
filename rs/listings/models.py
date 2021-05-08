@@ -5,7 +5,7 @@ from rs.realtors.models import Realtor
 
 
 class Listing(models.Model):
-    realter = models.ForeignKey(Realtor, on_delete=models.DO_NOTHING)
+    realtor = models.ForeignKey(Realtor, on_delete=models.DO_NOTHING)
     title = models.CharField(verbose_name="title", max_length=200)
     address = models.CharField(verbose_name="address", max_length=200)
     city = models.CharField(verbose_name="city", max_length=100)
