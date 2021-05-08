@@ -34,3 +34,5 @@ class ListingAdmin(admin.ModelAdmin):
         "price",
         "realtor__name",
     )
+
+    list_per_page = 25
